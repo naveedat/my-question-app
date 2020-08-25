@@ -1,0 +1,10 @@
+<div *ngIf="faqs">
+  <h1>HAVE A QUESTION? WE CAN HELP</h1>
+  <hr /><br>
+
+  <accordion ngif>
+    <group [id]="q.id" [question]="q.question" *ngFor="let q of faqs">
+      {{q.answer}}
+    </group>
+  </accordion>
+</div>

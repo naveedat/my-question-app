@@ -1,0 +1,47 @@
+.mypanel {
+  background-color: white;
+  color: #222;
+}
+  
+.mypanel .title {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 3px solid #666;
+  display: flex;
+}
+
+.mypanel .title.hidden  {
+  background-color:grey;
+}
+
+.mypanel .title .qid {
+  width: 100px;
+}
+
+.mypanel .title .question {
+  width: 85%;
+}
+
+.mypanel .title .icon {
+  display: flex; 
+  align-items: center; 
+  width:45px; 
+  height:45px; 
+  background-color:yellow;
+}
+
+.mypanel .title .icon.hidden path{
+  transform: rotate(45deg);
+  transform-origin: 50% 50%;
+}
+
+.mypanel .body {
+  padding: 10px;
+  border-bottom: 3px solid #666;
+}
+
+.mypanel .body.hidden {
+  display: none;
+}
+
